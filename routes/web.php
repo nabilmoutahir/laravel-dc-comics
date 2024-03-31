@@ -21,3 +21,6 @@ Route::get('/', function () {
 
 // INDEX
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+
+// SHOW
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
