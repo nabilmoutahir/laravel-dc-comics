@@ -17,6 +17,8 @@
                         <th>Sale Date</th>
                         <th>Type</th>
                         <th>More</th>
+                        <th class="px-3">Edit</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -29,6 +31,7 @@
                             <td>{{ $comic->sale_date }}</td>
                             <td>{{ $comic->type }}</td>
                             <td><a href="{{ route('comics.show', $comic) }}">Details</a></td>
+                            <td class="px-3"><a href="{{ route('comics.edit', $comic) }}">Edit</a></td>
                         </tr>
                     @empty
                         <tr>
