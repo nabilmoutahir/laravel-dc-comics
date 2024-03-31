@@ -42,12 +42,15 @@ class ComicController extends Controller
 
         $comic = new Comic;
 
-        $comic->title = $data["title"];
-        $comic->description = $data["description"];
-        $comic->price = $data["price"];
-        $comic->series = $data["series"];
-        $comic->sale_date = $data["sale_date"];
-        $comic->type = $data["type"];
+        // $comic->title = $data["title"];
+        // $comic->description = $data["description"];
+        // $comic->price = $data["price"];
+        // $comic->series = $data["series"];
+        // $comic->sale_date = $data["sale_date"];
+        // $comic->type = $data["type"];
+
+        // FILL
+        $comic->fill($data);
 
         $comic->save();
 
@@ -85,7 +88,7 @@ class ComicController extends Controller
      */
     public function update(Request $request, comic $comic)
     {
-        //
+        
     }
 
     /**
