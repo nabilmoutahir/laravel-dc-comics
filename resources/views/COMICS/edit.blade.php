@@ -7,7 +7,7 @@
     <section>
         <div class="container py-4">
 
-            <h1>Edit Comic!</h1>
+            <h1>Edit Comic {{$comic->id}}: {{$comic->title}}</h1>
 
             {{-- FORM --}}
             <form action="{{ route('comics.update', $comic)}}" method="POST" class="row d-flex">
